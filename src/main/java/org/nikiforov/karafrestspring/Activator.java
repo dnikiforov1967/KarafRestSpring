@@ -1,25 +1,20 @@
 package org.nikiforov.karafrestspring;
 
-import org.nikiforov.karafrestspring.spring.base.BaseContainer;
-import org.nikiforov.karafrestspring.spring.config.BaseConfiguration;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.springframework.beans.factory.BeanFactory;
 
 public class Activator implements BundleActivator {
 
-    private BaseContainer baseContainer;
-    
     public void start(BundleContext context) throws Exception {
-        // TODO add activation code here
-        Thread.currentThread().setContextClassLoader(BaseConfiguration.class.getClassLoader());        
-        baseContainer = new BaseContainer();
-        baseContainer.init();
+        //This code is critically important cause OSGI class loader by default does not handle 
+        //classes of bundle JAR in case of dynamic class loading. Cause Spring framework
+        //is completely based of DCL, we need this class load setting to make application working
+        Thread.currentThread().setContextClassLoader(this.getClass().getClassLoader());
     }
 
     public void stop(BundleContext context) throws Exception {
         // TODO add deactivation code here
-        baseContainer.close();
-        baseContainer = null;
     }
 
 }

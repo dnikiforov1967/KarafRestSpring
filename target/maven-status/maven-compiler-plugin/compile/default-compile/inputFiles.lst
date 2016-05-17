@@ -1,4 +1,2 @@
-/home/dmtry/KarafProjects/KarafRestSpring/src/main/java/org/nikiforov/karafrestspring/spring/config/BaseConfiguration.java
-/home/dmtry/KarafProjects/KarafRestSpring/src/main/java/org/nikiforov/karafrestspring/spring/base/BaseContainer.java
-/home/dmtry/KarafProjects/KarafRestSpring/src/main/java/org/nikiforov/karafrestspring/spring/mvc/HelloController.java
-/home/dmtry/KarafProjects/KarafRestSpring/src/main/java/org/nikiforov/karafrestspring/Activator.java
+/home/dnikiforov/OSGIProjects/KarafRestSpring/src/main/java/org/nikiforov/karafrestspring/Activator.java
+/home/dnikiforov/OSGIProjects/KarafRestSpring/src/main/java/org/nikiforov/karafrestspring/spring/mvc/HelloController.java

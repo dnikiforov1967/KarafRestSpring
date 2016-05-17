@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1463449480816
-Build-Jdk: 1.8.0_45
-Built-By: dmtry
+Bnd-LastModified: 1463473491013
+Build-Jdk: 1.7.0_95
+Built-By: dnikiforov
 Bundle-Activator: org.nikiforov.karafrestspring.Activator
 Bundle-ClassPath: WEB-INF/classes,.,WEB-INF/classes
 Bundle-ManifestVersion: 2
